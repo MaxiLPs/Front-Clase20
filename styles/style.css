@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html body{
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header nav{
+    display: none;
+}
+
+header .hamburguesa{
+    display: inherit;
+}
+
+.encabezado{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.encabezado>img{
+    margin: 0 1rem;
+}
+
+/* Main */
+
+main{
+    background-color: #c4cbd1;
+}
+
+.bienvenida{
+    height: 512px;
+    background-image: url(../img/fondo_full.png);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida h1{
+    color: white;
+    margin: 2rem 2rem;
+    font-size:2rem;
+    text-align: center;
+}
+
+.bienvenida h1 span{
+    color: red;
+}
+
+.bienvenida button{
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    height: 61px;
+    width: 220px;
+    font-size: 1.5rem;
+}
+
+/* Tarjetas */
+
+h2{
+    width: 100%;
+    text-align:center;
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.tarjeta{
+    width: 240px;
+    height: 322px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta img{
+    width: 130px;
+    height: 163px;
+    margin: 30px 0 30px 0;
+}
+
+.tarjeta footer{
+    width: 100%;
+    padding: 15px 0 0 20px;
+    border-top: 0.2px solid #a09e9e;
+}
+
+.tarjeta footer h4{
+    margin: 3px 0 ;
+    font-size: .8rem;
+    font-weight: normal;
+}
+
+.tarjeta footer p{
+    color: #619D00;
+    font-size: .6rem;
+    font-weight: normal;
+}
+
+.prod-estrellas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-estrellas img{
+    width: 288px;
+    height: 108px;
+    border-radius: 5px;
+    margin: 0 20px 30px 20px;
+}
+
+.despedida{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.despedida h2{
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.despedida i{
+    margin: 0 20px;
+}
+
+.fa-twitter{color:#14AED0;}
+.fa-facebook-f{color: #1476D0;}
+.fa-instagram{color: #CE0CFF;}
+
+.despedida p{
+    background-color: rgb(199, 197, 197);
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    font-size: .7rem;
+}
+
+@media (min-width:680px){
+    header .hamburguesa{
+        display: none;
+    }
+    header nav{
+        display: inherit;
+        margin-right: 40px;
+    }
+    .encabezado ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .encabezado nav li{
+        color: white;
+        margin: 0 15px;
+    }
+
+    .encabezado .carrito{
+        margin-left: 80px;
+    }
+
+    .productos{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .prod-estrellas{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .footer{
+        width: 100%;
+        padding: 0 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
